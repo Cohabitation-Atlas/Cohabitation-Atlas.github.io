@@ -1,0 +1,412 @@
+
+@font-face {
+    font-family: "Karrik";
+    src: url("font/Web/TFF/Karrik-Regular.ttf") format("tff");
+    src: url("font/Web/WOFF/Karrik-Regular.woff") format("woff"),
+    }
+
+
+
+html{
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family: "Karrik";
+    font-style: normal;
+    cursor:crosshair;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+  
+}
+
+a{
+ text-decoration: none;
+ padding:0;
+ margin:0;
+ color:white;
+}
+
+b{
+    font-family: "Karrik";
+    font-size:larger;
+
+}
+b:hover{
+    font-style:italic;
+}
+
+
+
+
+
+
+
+
+#totalcontainer{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    height: 100dvh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+
+}
+
+#totalcontainer:-webkit-scrollbar {
+    display: none;
+  }
+
+.fullpager{
+    min-width: fit-content;
+    height: 100%;
+}
+
+
+
+#footer{
+    position: absolute;
+    bottom:1dvh;
+    width: 95dvw;
+    margin-left: 5dvh;
+    display: flex;
+    mix-blend-mode: difference; 
+    z-index: 3;
+    justify-content: space-between;
+    transition: 0.2s;
+
+
+}
+
+
+
+#links{
+    padding-right:5px;
+    width: 150px;
+    text-align: center;
+
+
+
+}
+
+#links a:hover{
+    font-style: italic;
+
+}
+
+#links_start{
+    padding-right:5px;
+    width: 100px;
+
+
+}
+
+#links_start a:hover{
+    font-style: italic;
+
+
+}
+#links_end{
+    padding-right:5px;
+    width: 100px;
+    text-align: end;
+
+}
+
+#links_end a:hover{
+    font-style: italic;
+
+
+}
+
+
+
+
+
+
+
+
+.header{
+    
+    width: 95dvw;
+    height: 4dvh;
+    margin-top: 1dvh;
+    padding-left: 5vh;
+    position:absolute;
+    left: 0;
+    font-size: large;
+    display:flex;
+    mix-blend-mode: difference; 
+    z-index: 3;
+    justify-content: space-between;
+
+}
+#cohab{
+    font-family: "Karrik";
+    font-size: 1.6em;
+    color:white;
+
+}
+#donate{
+    margin-right: 20px;
+    height: 25px;
+    width: 150px;
+    border-radius: 30px;
+    background-color:rgb(0, 0, 0) ;
+    border: solid 1px white;
+    color: white;
+    text-align: center;
+    padding-top:5px;
+    transition:0.5s;
+}
+
+#donate:hover{
+    transform:scale(1.1)
+
+}
+
+/*beginning of individual pages */
+
+
+
+
+
+#startingpage{
+    min-width:100dvw;
+    margin-top:3dvw;
+    border-left: dotted 3px rgb(0, 0, 0) ;
+    border-bottom: dotted 3px rgb(0, 0, 0) ;
+    border-top: dotted 3px rgb(0, 0, 0) ;
+    margin-left: 5dvh;
+    height: 90dvh;
+
+    background-image: url(content/1.jpg);
+    background-position:left;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+#startingpage_text{
+    
+    color:rgb(0, 0, 0) ;
+    width: 600px;
+    margin-left: 20px;
+    padding-top:30px;
+    padding-left: 10px;
+    position:sticky;
+    font-weight: 600;
+    left:calc( 5dvh - 15px ); /* +10 px to offset the padding in the span of the text ( the white outline */
+    z-index:3;
+ 
+
+}
+
+#startingpage_text span{
+    padding: 5px;
+    background-color: white;
+    display:inline-block;
+}
+
+#index{
+    min-width: 80vw;
+    background-image: url(content/index.png);
+    background-position:top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top:3dvw;
+    border-bottom: dotted 3px rgb(0, 0, 0) ;
+    border-top: dotted 3px rgb(0, 0, 0) ;
+    height: 90dvh;
+
+ 
+
+}
+
+#index_text{
+    
+    width: 700px;
+    color:rgb(0, 0, 0) ;
+    margin-left: 20px;
+    padding-top: 80vh;
+    padding-left: 10px;
+    position:sticky;
+    font-weight: 400;
+    left:calc( 5dvh - 15px ); /* +10 px to offset the padding in the span of the text ( the white outline */
+    z-index:3;
+
+
+ 
+
+}
+
+#index_text span{
+    padding: 5px;
+    background-color: white;
+    display:inline-block;
+}
+
+
+
+
+
+#case_study{
+
+    aspect-ratio: 4 / 3;
+    background-image: url(content/7.jpg);
+    background-position:bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top:3dvw;
+    border-bottom: dotted 3px rgb(0, 0, 0) ;
+    border-top: dotted 3px rgb(0, 0, 0) ;
+    height: 90dvh;
+
+}
+
+#case_study_text{
+    
+    color:rgb(0, 0, 0) ;
+    width: 700px;
+    margin-left: 30px;
+    padding-top: 30px;
+    position:sticky;
+    left:calc( 5dvh - 15px ); /* +10 px to offset the padding in the span of the text ( the white outline */
+
+
+}
+
+#case_study_text span{
+    background-color: white;
+    display:inline-block;
+    padding: 5px;
+}
+
+
+
+#big_drawing{
+
+    aspect-ratio: 319.8 / 113;
+    background-image: url(content/full.png);
+    background-position:bottom;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top:3dvw;
+    height:90dvh;
+    display:inline-block;
+    border-top: 3px dotted black;
+    border-bottom: 3px dotted black;
+
+}
+
+#big_drawing_text{
+    
+    color:rgb(0, 0, 0) ;
+    width: 400px;
+    margin-left: 30px;
+    padding-top: 70dvh;
+    position:sticky;
+    font-weight: 400;
+    left:5dvh;
+    z-index:3;
+
+}
+
+#big_drawing_text span{
+    background-color: white;
+    display: inline-block;
+    padding:5px;
+}
+
+
+#design_guide{
+
+    aspect-ratio: 4 / 3;
+    background-image: url(content/12.jpg);
+    background-position:bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top:3dvw;
+    border-bottom: dotted 3px rgb(0, 0, 0) ;
+    border-top: dotted 3px rgb(0, 0, 0) ;
+    height: 90dvh;
+ 
+
+}
+
+#design_guide_text{
+    
+    color:rgb(0, 0, 0) ;
+    width: 500px;
+    margin-left: 30px;
+    padding-top: 30px;
+    position:sticky;
+    font-weight: 400;
+    left:5dvh;
+    z-index:3;
+ 
+
+}
+
+#design_guide_text span{
+    background-color: white;
+    display:inline-block;
+    padding:5px;
+}
+
+#six{
+    background-color: rgb(0, 0, 0);
+}
+
+#contact{
+  
+    min-width: 100vw;
+    margin-top:3dvw;
+    margin-right: 5dvh;
+    border-bottom: dotted 3px rgb(241, 241, 234);
+    border-top: dotted 3px rgb(241, 241, 234);
+    border-right: dotted 3px  rgb(241, 241, 234);
+    height: 90dvh;
+
+}
+
+#contact_text{
+    
+    color:white;
+    width: 500px;
+    margin-left: 20px;
+    padding-top: 50dvh;
+    position:sticky;
+    font-weight: 400;
+    left:80dvh;
+    z-index:3;
+
+
+ 
+
+}
+
+
+#contact_text span{
+    padding: 5px;
+    display:inline-block;
+}
+
+#mail:hover{
+    font-style:italic;
+    
+}
