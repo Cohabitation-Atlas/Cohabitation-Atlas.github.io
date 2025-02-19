@@ -7,6 +7,9 @@
 
 
 
+
+
+
 html{
     overflow: hidden;
     margin: 0;
@@ -15,7 +18,15 @@ html{
     font-family: "Karrik";
     font-style: normal;
     cursor:crosshair;
+    
+    
 }
+html, body {
+    overflow-x: auto;  /* Ensures horizontal scrolling is enabled */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+    white-space: nowrap; /* Prevents unwanted line breaks */
+}
+
 
 p{
     margin:0;
@@ -93,13 +104,16 @@ b:hover{
     padding-right:5px;
     width: 150px;
     text-align: center;
-
-
+    
 
 }
 
+
+
 #links a:hover{
     font-style: italic;
+    font-weight: 100;
+    
 
 }
 
@@ -204,7 +218,6 @@ b:hover{
     padding-top:30px;
     padding-left: 10px;
     position:sticky;
-    font-weight: 600;
     left:calc( 5dvh - 15px ); /* +10 px to offset the padding in the span of the text ( the white outline */
     z-index:3;
  
@@ -411,6 +424,18 @@ b:hover{
     
 }
 
+#impressum_container {
+    width: 100dvw;
+    height: 100dvh;
+    padding-left:5dvh;
+    background-color: black;
+    overflow: scroll;
+}
+#impressum{
+    color:white;
+    width: 80vw;
+}
+
 
 @media (max-width:768px){
 
@@ -434,6 +459,7 @@ b:hover{
     }
     .header{
         padding-left:5dvw;
+        width: 80vw;
     }
     #cohab{
         font-size:1.4rem;
@@ -447,7 +473,7 @@ b:hover{
 
     #startingpage_text{
         width:100vw;
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
 
     #index{
@@ -455,26 +481,31 @@ b:hover{
     }
     #index_text{
         width:100vw;
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
 
     #case_study_text{
         width:100vw;
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
     #big_drawing_text{
         width:100vw;
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
     #design_guide_text{
         width:100vw;
-        font-size:0.6rem;
+        font-size:0.7rem;
     }
     #contact{
-        width: 80dvw;
-        margin-right:3dvh;
+        width: 100dvw;
+    }
+    #contact_text{
+        width:60vw;
+        font-size:0.7rem;
+
     }
 
+    
 
 
 }
