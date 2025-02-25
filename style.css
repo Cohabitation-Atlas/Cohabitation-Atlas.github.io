@@ -31,7 +31,9 @@ p{
     margin:0;
     padding:0;
 }
-
+a{
+    cursor: none;
+}
 body{
     margin:0;
     padding:0;
@@ -72,7 +74,7 @@ b:hover{
     justify-content: center;
     pointer-events: none; /* Nicht anklickbar */
     z-index: 9999;
-    color:Black;
+    mix-blend-mode: difference;
 }
 
 
@@ -447,6 +449,7 @@ b:hover{
     padding-left:5dvh;
     background-color: black;
     overflow: scroll;
+    display:flex;
 }
 #impressum{
     color:white;
@@ -455,12 +458,15 @@ b:hover{
 
 #impressum p{
     width:80vw;
-    background-color: orange;
+
 }
 
 
 @media (max-width:768px){
 
+    .custom-cursor{
+        display:none;
+    }
     #links{
         display:none;
         
@@ -476,11 +482,12 @@ b:hover{
 
     #startingpage{
         width:300vw;
-        margin-left:5dvw;
+        margin-left:3dvh;
+        left:2dvh;
 
     }
     .header{
-        padding-left:5dvw;
+        padding-left:3dvh;
         width: 80vw;
     }
     #cohab{
@@ -522,7 +529,7 @@ b:hover{
         width: 100dvw;
     }
     #contact_text{
-        width:60vw;
+        width:70vw;
         font-size:0.7rem;
 
     }
