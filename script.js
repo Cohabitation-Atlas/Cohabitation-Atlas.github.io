@@ -62,4 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+const cursor = document.querySelector('.custom-cursor');
 
+// Folge der Mausposition
+document.addEventListener('mousemove', (e) => {
+    cursor.style.transform = `translate(${e.pageX - 25}px, ${e.pageY - 25}px)`; // Zentriert das Plus
+});
